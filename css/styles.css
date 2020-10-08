@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Playfair+Display:wght@400;700&display=swap");
+
+:root {
+  --font-Playfair: "Playfair Display", serif;
+  --font-Lato: "Lato", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  transition: all, 0.6s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+/* Main Styles */
+
+body {
+  font: 16px var(--font-Lato);
+  width: 100%;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 130px auto;
+  padding: 120px 120px;
+}
+
+.container h1 {
+  font: 42px var(--font-Playfair);
+  color: #171717;
+  margin-bottom: 25px;
+}
+
+.container p:first-of-type::first-letter {
+  font: 110px/70px var(--font-Playfair);
+  font-weight: 400;
+  color: #171717;
+  float: left;
+  margin-right: 20px;
+}
+
+.container p {
+  letter-spacing: -0.09px;
+  margin-bottom: 40px;
+  color: #7b7b7b;
+}
+
+.comment {
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 40px;
+  color: #7b7b7b;
+}
+
+.link_discover {
+  padding: 20px 75px;
+  color: #eaa258;
+  border: 2px solid;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.link_discover:hover {
+  background: #eaa258;
+  color: #fff;
+}
